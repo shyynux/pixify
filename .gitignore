@@ -1,0 +1,10 @@
+# Ignore log files
+*.log
+
+# Ignore build artifacts
+/build/
+/dist/
+/node_modules/
+
+# Ignore sample images
+/backend/images
