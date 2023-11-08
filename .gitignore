@@ -5,6 +5,8 @@
 /build/
 /dist/
 /node_modules/
+.DS_Store
+/backend/.DS_Store
 
 # Ignore sample images
 /backend/images
