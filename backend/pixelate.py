@@ -16,9 +16,9 @@ def pixelate_image(input_path, output_path, pixel_size):
     # Save the pixelated image
     cv2.imwrite(output_path, pixelated_image)
 
-# Example usage
-input_image_path = "images/input.jpg"  # Replace with the path to your input image
-output_image_path = "images/pixelated_image.jpg"  # Replace with the desired output path
-pixel_size = 6  # Adjust this value to control the pixelation level
+# # Example usage
+# input_image_path = "images/input.jpg"  # Replace with the path to your input image
+# output_image_path = "images/pixelated_image.jpg"  # Replace with the desired output path
+# pixel_size = 6  # Adjust this value to control the pixelation level
 
-pixelate_image(input_image_path, output_image_path, pixel_size)
+# pixelate_image(input_image_path, output_image_path, pixel_size)
