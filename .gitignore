@@ -1,5 +1,7 @@
 # Ignore log files
 *.log
+backend/__pycache__
+backend/__pycache__/pixelate.cpython-311.pyc
 
 # Ignore build artifacts
 /build/

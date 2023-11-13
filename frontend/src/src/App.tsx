@@ -15,17 +15,14 @@ function App() {
         setOutputImage(null); // Clear previous output when a new image is selected
       };
       reader.readAsDataURL(file);
+      console.log('h3y hun '+file.name);
     }
   };
 
   const handleProcessButtonClick = async () => {
       const inputImagePath = inputImage;
-      const outputImagePath = outputImage;
+      const outputImagePath = "/Users/jayshree/Documents/open-source/pixify/backend/images/temp1.png";
       const pixelSize = 6;
-
-      console.log('input');
-      console.log(inputImagePath);
-      console.log('---------')
     
       const response = await fetch('http://127.0.0.1:5000/pixelate', {
         method: 'POST',
@@ -39,6 +36,8 @@ function App() {
           pixel_size: pixelSize,
         }),
       });
+
+      console.log('i am in fecth');
     
       if (response.ok) {
         // The image was pixelated successfully
