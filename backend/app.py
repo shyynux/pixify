@@ -3,30 +3,25 @@ from pixelate import pixelate_image
 from flask_cors import CORS  
 
 app = Flask(__name__)
-CORS(app, resources={r"*": {"origins": "*"}})  # Set 'Access-Control-Allow-Origin' to '*'
+CORS(app)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
 
 @app.route('/pixelate', methods=['POST'])
 def pixelate():
-    input_image_path = request.json['input_image_path']
-    output_image_path = request.json['output_image_path']
-    pixel_size = request.json['pixel_size']
+    data = request.json
+    input_image_path = data.get('input_image_path')
+    output_image_path = data.get('output_image_path')
+    pixel_size = data.get('pixel_size')
 
-    #print passed value
-    print("Input - ")
-    print(input_image_path)
-    print("outpu -")
-    print(output_image_path)
-    print("pixel size")
-    print(pixel_size)
-
-    # Call your Python function to pixelate the image
+    # Call Python function to pixelate the image
     pixelate_image(input_image_path, output_image_path, pixel_size)
 
-    return jsonify({'success': True})
+    result = "Pixelated your image."
 
-
-# # Allow cross-origin requests
-# app.config['CORS_ORIGINS'] = ['http://localhost:5173/']
+    return jsonify({'Success': result})
 
 if __name__ == '__main__':
     app.run(debug=True)

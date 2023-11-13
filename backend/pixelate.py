@@ -7,6 +7,18 @@ def pixelate_image(input_path, output_path, pixel_size):
     # Get the height and width of the image
     height, width = image.shape[:2]
 
+    print("height is - ", height)
+    print("Width is - ", width)
+    print("type of height and width is - ", type(height), type(width))
+
+    print("hello and welcome boo")
+    #test
+    if image is not None:
+        print('variable is not None')
+        print(image.shape)
+    else:
+        print('variable is None')           
+
     # Resize the image to a smaller size
     small_image = cv2.resize(image, (width // pixel_size, height // pixel_size), interpolation=cv2.INTER_LINEAR)
 
@@ -16,9 +28,3 @@ def pixelate_image(input_path, output_path, pixel_size):
     # Save the pixelated image
     cv2.imwrite(output_path, pixelated_image)
 
-# # Example usage
-# input_image_path = "images/input.jpg"  # Replace with the path to your input image
-# output_image_path = "images/pixelated_image.jpg"  # Replace with the desired output path
-# pixel_size = 6  # Adjust this value to control the pixelation level
-
-# pixelate_image(input_image_path, output_image_path, pixel_size)
