@@ -12,3 +12,5 @@ backend/__pycache__/pixelate.cpython-311.pyc
 
 # Ignore sample images
 /backend/images
+
+frontend/src/src/.env
