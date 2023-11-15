@@ -25,3 +25,4 @@ dist-ssr
 
 # Cache files
 backend/__pycache__
+frontend/src/src/.env

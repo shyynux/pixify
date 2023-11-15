@@ -2,6 +2,7 @@ import cv2
 
 def pixelate_image(input_path, output_path, pixel_size):
     # Read the image
+    print("Input Path:", input_path)
     image = cv2.imread(input_path)
     
     # Get the height and width of the image

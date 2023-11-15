@@ -23,5 +23,14 @@ def pixelate():
 
     return jsonify({'Success': result})
 
+#testing if flask is working or not
+@app.route('/funtoon', methods=['POST'])
+def funtoon():
+    data = request.json
+    result = data.get('wow') + ' & thomas'
+
+    return jsonify({'Result is ': result})
+
+
 if __name__ == '__main__':
     app.run(debug=True)
