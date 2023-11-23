@@ -20,10 +20,11 @@ I love pixel art and [`retro`] stuff, so I made this cute little project.
 - Backend : Python, Flask
 - Database : Storage from Firebase
 
-## Version 1
+### Version 1
 - pixelate your images.
 - Added custom pixelation levels
 
-## Version 2
+### Version 2
 - Add Glow filter
 - Add Pixelation Levels and Glow levels feature [Pixelation levels added]
+- Reduce image wait time
