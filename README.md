@@ -19,8 +19,9 @@ I love pixel art and [`retro`] stuff, so I made this cute little project.
 - Database : Storage from Firebase
 
 ## Version 1
-- basic version, pixifie your images.
+- pixelate your images.
+- Added custom pixelation levels
 
 ## Version 2
 - Add Glow filter
-- Add Pixelation Levels and Glow levels feature
+- Add Pixelation Levels and Glow levels feature [Pixelation levels added]
