@@ -33,6 +33,13 @@ const App = () => {
     });
   }
 
+  const addPixelationLevel = (event: React.ChangeEvent<HTMLInputElement>) => {
+
+    pixelationLevel= parseInt(event.target.value);
+    console.log(" this is pl ", pixelationLevel);
+
+  }
+
   const handlePixifiebutton = () => {
     /* - api call to the flask backend */
   
@@ -133,6 +140,13 @@ const App = () => {
         </button>
 
         {/* Add custom pixelation levels */}
+        <input
+          type="number"
+          id="pixelationLevel"
+          className="w-16 text-center text-mono border rounded-lg"
+          defaultValue={6}
+          onChange={addPixelationLevel}
+        />
        
 
         {/* Button 2: Process Image */}
