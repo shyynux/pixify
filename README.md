@@ -12,6 +12,12 @@ I love pixel art and [`retro`] stuff, so I made this cute little project.
 - click on the upload and the pixifie button.
 - You can download the image by clicking the download button.
 
+## How is this build?
+
+- Frontend : React/TypeScript, TailwindCSS
+- Backend : Python, Flask
+- Database : Storage from Firebase
+
 ## Version 1
 - basic version, pixifie your images.
 
