@@ -11,7 +11,10 @@ I love pixel art and [`retro`] stuff, so I made this cute little project.
 ## How to use this?
 
 - Go to [`pixifie`](https://pixifie-frontend.vercel.app/)
-- click on the upload and the pixifie button.
+- click on the upload box and upload an image
+- click on the upload button
+- set the custom pixelation
+- click on the pixelate button
 - You can download the image by clicking the download button.
 
 ## How is this build?
