@@ -10,7 +10,7 @@ I love pixel art and [`retro`] stuff, so I made this cute little project.
 
 ## How to use this?
 
-- Go to [`add-url-pls`]. (coming soon)
+- Go to [`pixifie`](https://pixifie-frontend.vercel.app/)
 - click on the upload and the pixifie button.
 - You can download the image by clicking the download button.
 
