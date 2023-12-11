@@ -1,30 +1,19 @@
 import dotenv from 'dotenv';
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
-import { getAnalytics } from "firebase/analytics";
-
-// Load the `.env` file
-dotenv.config();
-
-const apiKey = process.env.FIREBASE_API_KEY;
-const authDomain = process.env.FIREBASE_AUTH_DOMAIN;
-const projectId = process.env.FIREBASE_PROJECT_ID;
-const storageBucket = process.env.FIREBASE_STORAGE_BUCKET;
-const messagingSenderId = process.env.FIREBASE_MESSAGING_SENDER_ID;
-const appId = process.env.FIREBASE_APP_ID;
-const measurementId = process.env.FIREBASE_MEASUREMENT_ID;
 
 const firebaseConfig = {
-  apiKey,
-  authDomain,
-  projectId,
-  storageBucket,
-  messagingSenderId,
-  appId,
-  measurementId
+
+  apiKey: "AIzaSyDK2g4SG6UZt2vVYZ6Sgp91pXvyEhcYhZc",
+  authDomain: "pixifie-2f67b.firebaseapp.com",
+  projectId: "pixifie-2f67b",
+  storageBucket: "pixifie-2f67b.appspot.com",
+  messagingSenderId: "697867786353",
+  appId: "1:697867786353:web:2054f2d7d437688b4d63d0",
+  measurementId: "G-CNBXT1WG8R"
+
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 export const storage = getStorage(app);

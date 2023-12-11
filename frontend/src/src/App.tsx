@@ -47,7 +47,7 @@ const App = () => {
     const pixelSize = pixelationLevel;
 
     axios
-      .post('http://127.0.0.1:5000/pixelate', {
+      .post('https://pixifie.onrender.com/pixelate', {
         "input_image_path": inputImagePath,
         "pixel_size": pixelSize,
       }, {
@@ -67,18 +67,17 @@ const App = () => {
       });
   };
   return (
-    <div className=''>
+    <div>
     <div className="flex flex-col h-screen items-center font-mono p-4 ">
-     
       {/* Row 1: Header */}
       <div className="text-4xl mb-4">
         <header className='flex items-center justify-between'>
-        <h2 className=' text-4xl font-mono font-light mt-4 text-ghibli-green-4'>
+        <h2 className=' text-8xl font-super-milk tracking-wider mt-4 text-retro-3'>
          pixifie ʕ•͡-•ʔ
       </h2>
         </header>
-        <p className='text-xs font-mono font-light text-ghibli-green-4'>
-        ʚɞ Pixel charm for your images ʚɞ
+        <p className='text-xs font-mono font-light text-retro-3'>
+        upload your image, select pixelation levels and get your images 🍓 pixelated 🍓
       </p>
       </div>
 
@@ -86,7 +85,7 @@ const App = () => {
        <div className="flex p-4 h-2/3 w-2/3">
         {/* Box 1: Image Input */}
         <div className="flex flex-col items-center justify-center border border-gray-300 
-        rounded-lg shadow-lg p-4 mr-4 ml-4 h-9/10 w-4/5 bg-ghibli-green-1">
+        rounded-lg shadow-lg p-4 mr-4 ml-4 h-9/10 w-4/5 bg-retro-2">
          {imageUrls.length > 0 ? (
             imageUrls.map((url) => (
               <img src={url} alt="few nanoseconds (˚ ˃̣̣̥⌓˂̣̣̥ )" className="h-full w-full" />
@@ -94,12 +93,14 @@ const App = () => {
           ) : (
             <label htmlFor="imageInput" className="cursor-pointer">
               <div className="p-4 rounded-md">
-                <span className="text-gray-500">Upload image (click me ˙ᵕ˙)</span>
-                <p className="text-xs text-gray-500">select an image, then click on the upload button below</p>
+                <span className="text-retro-4">Upload image (click me ˙ᵕ˙)</span>
+                <p className="text-xs text-retro-4">select an image by touching me</p>
+                <p className="text-xs text-retro-4">then click on the upload button below</p>
+
                 {inputImage ? (
-                <span className="text-gray-500"><br />{inputImage.name}</span>
+                <span className="text-black-500"><br />{inputImage.name}</span>
               ) : (
-                // Your fallback content or empty fragment if there's nothing to render when inputImage is falsy
+                // empty render
                 <span className="text-gray-500"></span>
               )}
               </div>
@@ -116,13 +117,16 @@ const App = () => {
 
         {/* Box 2: Output Image */}
         <div className="flex flex-col items-center justify-center border border-gray-300 
-        rounded-lg shadow-lg p-4 mr-4 h-9/10 w-4/5 bg-ghibli-green-1">
+        rounded-lg shadow-lg p-4 mr-4 h-9/10 w-4/5 bg-retro-2">
           {firebaseUrl.length > 0 ? (
             firebaseUrl.map((url) => (
               <img src={url} alt="just wait a little, it's coming" className="h-full w-full" />
             ))
           ) : (
               <div className="p-4 rounded-md">
+              <p className="text-xs text-retro-4">first, select pixelation level</p>
+              <p className="text-xs text-retro-4">then, click on the pixelate button</p>
+
               </div>
           )}
         </div>
@@ -132,7 +136,7 @@ const App = () => {
       <div className="flex p-4">
        {/* Button 1: Upload Image */}
         <button
-          className="ml-4 mr-4 bg-ghibli-green-4 hover:bg-dark-pastel-green 
+          className="ml-4 mr-4 bg-retro-3 hover:bg-retro-4 
           font-bold text-white rounded-lg text-sm px-5 py-2.5 text-center shadow-lg"
           onClick={handleUploadbutton}
         >
@@ -151,7 +155,7 @@ const App = () => {
 
         {/* Button 2: Process Image */}
         <button
-          className="ml-4 mr-4 bg-ghibli-green-4 hover:bg-dark-pastel-green 
+          className="ml-4 mr-4 bg-retro-3 hover:bg-retro-4 
           font-bold text-white rounded-lg text-sm px-5 py-2.5 text-center shadow-lg"
           onClick={handlePixifiebutton}
         >
@@ -167,8 +171,8 @@ const App = () => {
           Download ⬇️
         </button> */}
 
-        <a href={(firebaseUrl[0])} download="my-image.png" className='ml-4 bg-ghibli-green-4 
-        hover:bg-dark-pastel-green font-bold text-white 
+        <a href={(firebaseUrl[0])} download="my-image.png" className='ml-4 bg-retro-3 hover:bg-retro-4 
+        font-bold text-white 
         rounded-lg text-sm px-5 py-2.5 text-center shadow-lg'>Download ⬇️ </a>
 
       </div>
