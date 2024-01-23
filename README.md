@@ -5,7 +5,7 @@ With Pixifie, you can pixelate and make your images ✨cuter✨.
 
 I love pixel art and [`retro`] stuff, so I made this cute little project. 
 
-![pixifie-looks-like-this-rn](https://firebasestorage.googleapis.com/v0/b/pixifie-2f67b.appspot.com/o/public_images%2FScreenshot%202023-11-23%20at%201.39.53%20PM.png?alt=media&token=8424cf74-6805-4c95-a8c8-c0276ed2d7d0)
+![pixifie-looks-like-this-rn](https://firebasestorage.googleapis.com/v0/b/pixifie-2f67b.appspot.com/o/do-not-delete%2FScreenshot%202024-01-23%20at%2011.13.10%20PM.png?alt=media&token=50f780f6-c95f-41c9-aca6-b172f4463344)
 
 
 ## How to use this?
