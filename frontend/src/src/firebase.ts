@@ -1,12 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
-console.log("hi");
-console.log("i am in firebase congif");
-console.log(import.meta.env.TEST_VAR);
-console.log(import.meta.env.MODE);
-console.log(import.meta.env.VITE_STORAGE_BUCKET);
-
 const firebaseConfig = {
 
   apiKey: import.meta.env.VITE_API_KEY,

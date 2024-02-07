@@ -24,7 +24,6 @@ const App = () => {
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-      console.log("hey i am in bb");
       setInputImage(file);
       const reader = new FileReader();
       reader.onloadend = () => {
@@ -44,7 +43,6 @@ const App = () => {
 
   const uploadToFirebase = () => {
     if(inputImage == null) return;
-    console.log('i was called!');
     const imageRef = ref(storage, `images/${inputImage.name + v4()}`);
     uploadBytes(imageRef, inputImage).then((snapshot) => {
       getDownloadURL(snapshot.ref).then((url) => {
@@ -60,7 +58,6 @@ const App = () => {
 
     pixelationLevel= parseInt(event.target.value);
     console.log(" this is the pixelation level ", pixelationLevel);
-
   }
 
   const handlePixifiebutton = async () => {
@@ -84,7 +81,7 @@ const App = () => {
   
       console.log('POST request successful for pixelate!');
       const outputURL = response.data.url;
-      console.log(' response - data - image', outputURL);
+      // console.log(' response - data - image', outputURL);
       setFirebaseUrl([outputURL]);
     } catch (error) {
       console.error('POST request failed for pixelate!');
