@@ -2,8 +2,9 @@
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+  align-items: center;
 }
 
 body {
-  background-color: #EEE2DE;
+  background-color: whitesmoke;
 }

@@ -14,8 +14,8 @@ export default {
         'ghibli-green-4': '#618264',
         'neon-glow-1': '#16FF00',
         'retro-1': '#EEE2DE',
-        'retro-2': '#EA906C',
-        'retro-3': '#B31312',
+        'retro-2': '#FFD0EC',
+        'retro-3': '#D63484',
         'retro-4': '#2B2A4C',
       },
       fontFamily: {
